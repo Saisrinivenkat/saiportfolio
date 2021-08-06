@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-scroll'
+
 import { Container,Title,Wrapper,InnerContainer,ImageContainer,VMargin,HMargin,InfoText,AboutData,Button,Background,Description } from '../commonStyles/style'
 import img from '../../assets/images/profile.jpg'
 
@@ -32,16 +34,11 @@ export default function About() {
                   {'Sort of person who build projects to learn specific technology not to look them nicer. Apart from Coding, I would love Sports and reading books'}
                 </Description>
                 <VMargin margin={10}/>
-                <Button size="sm">
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cta-btn cta-btn--resume"
-                    href={'www.canva.com/design/DAEfZUJwBtI/uLxbSc_VDvlzvzyqV47aoA/view?utm_content=DAEfZUJwBtI&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'}
-                  >
-                    Resume
-                  </a>
-                </Button>
+                <Link to="resume" smooth duration={1500}>
+                  <Button size="sm">
+                      Resume
+                  </Button>
+                </Link>
             </AboutData>
           </Wrapper>
         </InnerContainer>

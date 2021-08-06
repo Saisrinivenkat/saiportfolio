@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container,Title,InnerContainer, Description,Button, VMargin, ContactCont} from '../commonStyles/style'
+import { Container,Title,InnerContainer, Description,Button, VMargin, ContactCont,Background} from '../commonStyles/style'
 
 export default function Contact() {
   const contactData = {
@@ -12,6 +12,7 @@ export default function Contact() {
 
   return (
       <Container >
+        <Background />
         <InnerContainer height={450} >
           <ContactCont data-aos="flip-left" data-aos-easing="ease-out-cubic" direction={'column'}>
             <Title size={2.5}>Contact</Title>

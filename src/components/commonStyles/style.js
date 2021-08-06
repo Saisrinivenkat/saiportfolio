@@ -185,8 +185,11 @@ export const Background = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 2;
-  background-color: #BB4444;
+  z-index: 1;
+  background: #DF1313;
+  background: -webkit-radial-gradient(bottom left, #DF1313, #BB4444);
+  background: -moz-radial-gradient(bottom left, #DF1313, #BB4444);
+  background: radial-gradient(to top right, #DF1313, #BB4444);
   clip-path: ${({ direction }) => direction === 'left'?`polygon(0 100%, 100% 100%, 0 0)`:`polygon(0 0, 100% 100%, 100% 0)`}; ;
 
 `
@@ -196,6 +199,7 @@ export const ContactCont = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 3;
 `
 export const Icon = styled.div`
   color: #fff;
@@ -236,4 +240,22 @@ export const FooterTitle = styled.h2`
     margin-top: 5px;
     font-size: .8rem;
   }
+`
+
+export const ResumeContainer = styled.div`
+  width: 100%;
+  height: 600px;
+  padding: 2rem;
+  display: flex;
+  z-index: 5;
+  justify-content: center;
+  iframe{
+    width: 80%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 25px 201px 8px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 2px 25px 201px 8px rgba(0,0,0,0.56);
+    -moz-box-shadow: 2px 25px 201px 8px rgba(0,0,0,0.56);
+  }
+
 `
