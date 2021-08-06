@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React,{ useState,useEffect } from 'react'
 import { Container,Title,Wrapper,VMargin,Button,SmallCont,HMargin,ImageContainer,InnerContainer,AboutData, Description, TextColor, Background } from '../commonStyles/style'
 import oxy from '../../assets/images/oxyfinder.png'
 import serv from '../../assets/images/serverless.jpg'
@@ -66,6 +66,15 @@ const projects = [
 
 export default function Projects() {
   const [more, setMore] = useState(false);
+  const [IsMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    if (window.innerWidth > 769) {
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+    }
+  }, []);
 
   const MoreProjects = ()=>{
     setMore(!more);
@@ -116,7 +125,7 @@ export default function Projects() {
                       </SmallCont>
                 </AboutData>
                 <HMargin margin={20} />
-                <div data-aos="fade-up-left">
+                <div data-aos={IsMobile?"fade-up":"fade-up-left"}>
                       <a
                         href={url || '#!'}
                         target="_blank"

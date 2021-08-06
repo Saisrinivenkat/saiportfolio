@@ -112,7 +112,7 @@ export const Button = styled.button`
   }
   @media screen and (max-width: 769px){
     padding: ${({ size }) => size==='sm'?'.3em':`.3em`} ${({ size }) => size==='sm'?'.5em':`1em`};
-    font-size: 1rem;
+    font-size: .9rem;
   }
 `
 export const Description = styled.h4`
@@ -153,8 +153,8 @@ export const ImageContainer = styled.div`
     transform: scale(1.2);
   }
   @media screen and (max-width: 1000px){
-    width: ${({ sizeX }) => sizeX?18+'em':`18em`};
-    height: ${({ sizeX }) => sizeX?11+'em':`18em`};
+    width: ${({ sizeX }) => sizeX?15+'em':`14em`};
+    height: ${({ sizeX }) => sizeX?9+'em':`14em`};
     margin-top: 20px;
   }
 `
@@ -236,7 +236,7 @@ export const FooterTitle = styled.h2`
   z-index: 5;
   text-align: left;
   color: ${({ Color }) => Color?Color:`#fff`};
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 769px){
     margin-top: 5px;
     font-size: .8rem;
   }
@@ -258,4 +258,8 @@ export const ResumeContainer = styled.div`
     -moz-box-shadow: 2px 25px 201px 8px rgba(0,0,0,0.56);
   }
 
+  @media screen and (max-width: 1000px){
+    height: 300px;
+    width: 350px;
+  }
 `

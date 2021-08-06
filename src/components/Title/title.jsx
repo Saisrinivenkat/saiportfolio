@@ -4,7 +4,6 @@ import { Link } from 'react-scroll';
 import { Container,Wrapper,HMargin,VMargin,Title,TextColor,SubTitle,Button } from '../commonStyles/style';
 
 export default function Head() {
-
   const [IsMobile, setIsMobile] = useState(false)
   useEffect(() => {
     if (window.innerWidth > 769) {
