@@ -3,11 +3,31 @@ import { Container,Title,Wrapper,VMargin,Button,SmallCont,HMargin,ImageContainer
 import oxy from '../../assets/images/oxyfinder.png'
 import serv from '../../assets/images/serverless.jpg'
 import invis from '../../assets/images/project.jpg'
+import cloak from '../../assets/images/cloak.png'
 import hub from '../../assets/images/hubhack.jpg'
 import port from '../../assets/images/portfolio.jpg'
-
+import tos from '../../assets/images/tos.png'
+import campers from '../../assets/images/campers.png'
 
 const projects = [
+  {
+    id: 67331,
+    img: campers,
+    title: 'Camper Notes',
+    info: 'JavaScript, HTML/CSS',
+    info2: 'A simple chrome extension that lets users to take sopisticated notes while listening to youtube videos',
+    url: '',
+    repo: 'https://github.com/Saisrinivenkat/XNK98421475-Campers',
+  },
+  {
+    id: 4331,
+    img: tos,
+    title: 'Terms and Policies Summarizer',
+    info: 'nltk, RAKE',
+    info2: 'It helps users to Summarize long paragraphs into shorter summary ',
+    url: '',
+    repo: 'https://github.com/Saisrinivenkat/Terms-and-polcies-Summarizer',
+  },
   {
     id: 434,
     img: hub,
@@ -46,7 +66,7 @@ const projects = [
   },
   {
     id: 23645,
-    img: invis,
+    img: cloak,
     title: 'Invisible cloak',
     info: ' Python, OpenCV',
     info2: ' As I already said Im passionate to explore Machine Learning. So this was my first step towards ML. I learnt how to analyze images using OpenCV and learnt some morphological features.',

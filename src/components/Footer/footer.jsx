@@ -25,7 +25,7 @@ export default function Footer() {
             </a>
             <HMargin margin={10}/>
             <a 
-            href="https://www.linkedin.com/in/saivenkat-srini-229384191/" 
+            href="https://www.linkedin.com/in/sai-srinivasan-v-229384191/" 
             target="_blank"
             rel="noopener noreferrer"
             >

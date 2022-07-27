@@ -23,17 +23,14 @@ export default function About() {
             <HMargin margin={30}/>
             <AboutData data-aos={"fade-right"}>
                 <Description >
-                  {'I am a sophomore at College of Engineering(Coe) Guindy pursuing bachelors in Information Technology with a passion towards Web Technologies and Machine Learning '}
+                  {'I am a senior at College of Engineering(Coe) Guindy pursuing bachelors in Information Technology with a passion towards Web Technologies and Machine Learning '}
                 </Description>
                 <VMargin margin={15}/>
                 <Description  >
                   {'I am go-getter and intend to put in my efforts towards channelizing my knowledge and skills while moving ahead with my career'}
                 </Description>
                 <VMargin margin={15}/>
-                <Description  >
-                  {'Sort of person who build projects to learn specific technology not to look them nicer. Apart from Coding, I would love Sports and reading books'}
-                </Description>
-                <VMargin margin={10}/>
+                
                 <Link to="resume" smooth duration={1500}>
                   <Button size="sm">
                       Resume
